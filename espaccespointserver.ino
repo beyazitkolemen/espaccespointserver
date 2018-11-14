@@ -51,7 +51,7 @@ WiFi.softAP(ssid, password);
         digitalWrite(21, HIGH);
     request->send(SPIFFS, "/index.html", "text/html");
 
-  }).setAuthentication("artf4", "123654");
+  });
 
       server.serveStatic("/jquery-3.3.1.slim.min.js", SPIFFS, "/jquery-3.3.1.slim.min.js");
 
